@@ -1,4 +1,4 @@
-$(document).ready(funtion(){
+$(document).ready(function(){
 	$(".fadeIn").hide(0).delay(250).fadeIn(500);
 });
 
