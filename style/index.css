@@ -55,7 +55,7 @@ body
 	color: white;
 	display: flex;
 	justify-content: space-between;
-	font-size: 1.3em;
+	font-size: 2vh;
 	transition: 1s;
 }
 
@@ -63,11 +63,11 @@ body
 {
 	display: flex;
 	margin: 0;
-	height: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: 20px;
-	font-size: 2em;
+	height: 7vh;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 15px;
+	font-size: 1.5em;
 	line-height: 7vh;
 	background-color: black
 }
@@ -111,8 +111,8 @@ body
 	height: 100%;
 	padding-left: 20px;
 	padding-right: 20px;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	text-decoration: none;
 	transition: 0.3s;
 }
@@ -150,13 +150,14 @@ li a:not(.active)
 #titleBlock span
 {
 	width: 100%;
-	font-size: 2.5em;
+	font-size: 2vw;
 	padding-top: 20vh;
 }
 
 h1
 {
 	margin: 0;
+	font-size: 5vw;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -216,9 +217,10 @@ h1
 {
 	display: inline-flex;
 	font-size: 1.2em;
+	text-align: left;
 }
 
-#profilePic
+#mediumPic
 {
 	height: 50vh;
 	width: 50vh;
@@ -231,4 +233,12 @@ h1
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 10px;
+}
+
+#textBlock
+{
+	display: inline-block;
+	width: 50%;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
