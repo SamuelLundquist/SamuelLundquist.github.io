@@ -1,4 +1,6 @@
-$("#titleBlock").stop().animate({opacity: 1}, 2000);
+$(document).ready(funtion(){
+	$(".fadeIn").hide(0).delay(250).fadeIn(500);
+});
 
 jQuery(window).scroll(function(){
     var fromTop = 300;
