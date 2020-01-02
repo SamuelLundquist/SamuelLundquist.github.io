@@ -137,7 +137,6 @@ li a:not(.active)
 
 #titleBlock
 {
-	opacity: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
