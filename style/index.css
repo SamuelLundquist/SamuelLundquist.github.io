@@ -216,6 +216,7 @@ h1
 .block
 {
 	display: inline-flex;
+	flex-wrap: wrap;
 	font-size: 1.2em;
 	text-align: left;
 }
