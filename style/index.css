@@ -225,8 +225,8 @@ h1
 
 #mediumPic
 {
-	height: 25vw;
-	width: 25vw;
+	height: 40vh;
+	width: 40vh;
 	margin-right: 5vw;
 	background-image: url("../media/prof.jpg");
 	-webkit-background-size: cover;
