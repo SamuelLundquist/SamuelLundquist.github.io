@@ -31,6 +31,7 @@ $("li a").on("click", function (e) {
 			$("section").fadeOut(250, function () {
 				const newPage = $(data).filter("section").html();
 				$("section").html(newPage);
+				jQuery(window).scrollTop(0);
 				$("section").fadeIn(250);
 			});
 		}
