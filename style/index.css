@@ -211,3 +211,24 @@ h1
 	transition: 0.75s;
 	opacity: 0;
 }
+
+.block
+{
+	display: inline-flex;
+	font-size: 1.2em;
+}
+
+#profilePic
+{
+	height: 50vh;
+	width: 50vh;
+	margin-right: 5vw;
+	background-image: url("../media/prof.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-o-background-size: cover;
+  	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
