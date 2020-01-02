@@ -165,27 +165,26 @@ h1
 {
 	position:fixed;
 	z-index: 4;
+	margin-bottom: 2vh;
 	bottom: 0;
 	width: 100%;
-	height: 4vw;
+	height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 #downArrow
 {
 	background-color: rgba(0, 0, 0, 0);
-	/*border-radius: 5px;*/
-	margin-bottom: 5vh;
-	height: 3vmax;
-	width: 3vmax;
+	height: 4vmax;
+	width: 4vmax;
 	border-style:solid;
 	border-color: white;
 	border-width: 0 2px 2px 0;
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
-	transition: background-color 150ms ease-in-out;
 	transition: border-width 150ms ease-in-out;
 	transition: opacity 250ms ease-in-out;
 }
