@@ -1,0 +1,215 @@
+html
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar
+{
+	display: none;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	-ms-overflow-style: none;
+	background-image: url("../media/Photo by SpaceX.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-o-background-size: cover;
+  	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#back
+{
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	transition: 1s;
+}
+
+#back.blueColor
+{
+	background-color: #005986;
+}
+
+#navbar
+{
+	z-index: 2;
+	top:0;
+	position: fixed;
+	width:100%;
+	height: 7vh;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.3em;
+	transition: 1s;
+}
+
+#navbar div
+{
+	display: flex;
+	margin: 0;
+	height: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 20px;
+	font-size: 2em;
+	line-height: 7vh;
+	background-color: black
+}
+
+#navbar div span
+{
+	margin: auto;
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+#navbar ul
+{
+	padding: 0;
+	margin: 0;
+	justify-content: space-around;
+	list-style-type: none;
+	display: flex;
+}
+
+#navbar ul li
+{
+	display: inline-block;
+	margin: 0;
+	height: 100%;
+}
+
+#currentPageTab
+{
+	color: black;
+}
+
+#navbar ul li a
+{
+	display: inline-flex;
+	flex-direction: column;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+#navbar ul li a:hover
+{
+	background-color: #007ebd;
+	color: white;
+}
+
+li a:not(.active)
+{
+	color: white;
+}
+
+.active
+{
+	background-color: white;
+	color: black;
+	cursor: default;
+}
+
+#titleBlock
+{
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	color: white;
+	width: 100vw;
+	height: 100vh;
+}
+
+#titleBlock span
+{
+	width: 100%;
+	font-size: 2.5em;
+	padding-top: 20vh;
+}
+
+h1
+{
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#navArrow
+{
+	position:fixed;
+	z-index: 4;
+	bottom: 0;
+	width: 100%;
+	height: 4vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#downArrow
+{
+	background-color: rgba(0, 0, 0, 0);
+	/*border-radius: 5px;*/
+	margin-bottom: 5vh;
+	height: 3vmax;
+	width: 3vmax;
+	border-style:solid;
+	border-color: white;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transition: background-color 150ms ease-in-out;
+	transition: border-width 150ms ease-in-out;
+	transition: opacity 250ms ease-in-out;
+}
+
+#downArrow:hover
+{
+	border-bottom-width: 5px;
+	border-right-width: 5px;
+}
+
+.content
+{
+	z-index: 1;
+	margin: 0 10% 0 10%;
+	padding: 0 5% 0 5%;
+	width: 70%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	transition: 0.75s;
+	opacity: 0;
+}
