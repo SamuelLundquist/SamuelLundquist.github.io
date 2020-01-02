@@ -218,13 +218,15 @@ h1
 	display: inline-flex;
 	flex-wrap: wrap;
 	font-size: 1.2em;
+	align-items: center;
+	justify-content: center;
 	text-align: left;
 }
 
 #mediumPic
 {
-	height: 50vh;
-	width: 50vh;
+	height: 25vw;
+	width: 25vw;
 	margin-right: 5vw;
 	background-image: url("../media/prof.jpg");
 	-webkit-background-size: cover;
