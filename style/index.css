@@ -215,6 +215,7 @@ h1
 
 .block
 {
+	padding-bottom: 40px;
 	display: inline-flex;
 	flex-wrap: wrap;
 	font-size: 1.2em;
