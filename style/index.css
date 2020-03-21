@@ -216,8 +216,8 @@ h1
 .block
 {
 	padding-bottom: 40px;
-	display: inline-flex;
-	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
 	font-size: 1.2em;
 	align-items: center;
 	justify-content: center;
