@@ -217,7 +217,7 @@ h1
 {
 	padding-bottom: 40px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	font-size: 1.2em;
 	align-items: center;
 	justify-content: center;
