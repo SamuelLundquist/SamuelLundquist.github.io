@@ -1,64 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
-		<title>SamuelLundquist</title>
+		<meta charset="utf-8"/>
+		<title>SLWebsite</title>
 		<link rel="stylesheet" href='./style/index.css'>
-    	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-		<link rel="apple-touch-icon" sizes="64x64" href="./apple-touch-icon.png">
-		<!-- IE -->
-		<link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
-		<!-- other browsers -->
-		<link rel="icon" type="image/png" sizes="64x64" href="./apple-touch-icon.png">
-
 		<script src="./src/jquery-3.4.0.min.js"></script>
+
+		<!-- Favicon setup -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 
 	<body>
 
 		<div id='back'></div>
 
-		<div id='navbar'>
-
-			<div>
-				<span>SL</span>
+		<div class="sektion navsection noselect">
+			<div class="content navbar">
+				<div class="logo">SL</div>
+				<div class="menu">
+					<div class="barFill">
+						<div class="container" onclick="menuController(this)">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+					<li><a href="index.html">Home</a></li>
+					<li><a class="active" href="portfolio.html">Portfolio</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</div>
 			</div>
-
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a class="active" href="portfolio.html">Portfolio</a></li>
-				<li><a href="resume.html">Resume</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-
 		</div>
 
 		<div id="navArrow" class="fadeIn">
-			<a data-scroll href='#panel1'>
-				<div id='downArrow'></div>
+			<a data-scroll href='#contentPanel' id='downArrow'>
 			</a>
 		</div>
 
 		<section>
-
-			<div id='titleBlock'>
-				<span>
+			<div class="title noselect">
+				<span class="fadeIn">
 					<h1>Portfolio</h1>
-					What I've been doing
+					<h4>What I've been doing<h4>
 				</span>
 			</div>
 
-			<div class='content' id='panel1'>
-				<h2>placeholder text placeholder text</h2>
-				<P>placeholder text placeholder text</p>
-				<br>
-				<p>placeholder text placeholder text</p>
+			<div class="content" id="contentPanel">
+				<div class="subject">
+					<div class="sub_image" style="background-image: url('./media/uwu.png');">
+					</div>
+					<div class="sub_text">
+						<h2>Project 1</h2>
+						<p>
+							project 1 paragraph 1
+						</p>
+						<p>
+							project 1 paragraph 2
+						</p>
+					</div>
+				</div>
 
+				<div class="subject">
+					<div class="sub_image" style="background-image: url('./media/steel.jpg');">
+					</div>
+					<div class="sub_text">
+						<h2>Project 2</h2>
+						<p>
+							project 2 paragraph 1
+						</p>
+						<p>
+							project 2 paragraph 2
+						</p>
+					</div>
+				</div>
 			</div>
+
+			<span>
+				<button class="topper" onclick="topScroller()">Back to top</a>
+			</span>
 
 		</section>
 
+		<div class="footer">
+			<div class="ftr_text">Samuel Lundquist</div>
+			<div class="ftr_text">November, 2020</div>
+		</div>
 	</body>
 
 	<script type="text/javascript" src="./src/nav.js"></script>

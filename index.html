@@ -1,78 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
-		<title>SamuelLundquist</title>
+		<meta charset="utf-8"/>
+		<title>SLWebsite</title>
 		<link rel="stylesheet" href='./style/index.css'>
-    	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-		<link rel="apple-touch-icon" sizes="64x64" href="./apple-touch-icon.png">
-		<!-- IE -->
-		<link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
-		<!-- other browsers -->
-		<link rel="icon" type="image/png" sizes="64x64" href="./apple-touch-icon.png">
-
 		<script src="./src/jquery-3.4.0.min.js"></script>
+
+		<!-- Favicon setup -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 
 	<body>
 
 		<div id='back'></div>
 
-		<div id='navbar'>
-
-			<div>
-				<span>SL</span>
+		<div class="sektion navsection noselect">
+			<div class="content navbar">
+				<div class="logo">SL</div>
+				<div class="menu">
+					<div class="barFill">
+						<div class="container" onclick="menuController(this)">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</div>
 			</div>
-
-			<ul>
-				<li><a class="active" href="index.html">Home</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="resume.html">Resume</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-
 		</div>
 
 		<div id="navArrow" class="fadeIn">
-			<a data-scroll href='#panel1' id='downArrow'>
+			<a data-scroll href='#contentPanel' id='downArrow'>
 			</a>
 		</div>
 
 		<section>
-
-			<div id='titleBlock' class="fadeIn">
-				<span>
-					<h1>Samuel Lundquist</h1>
-					CIS Student & Aspiring Software Developer
+			<div class="title noselect">
+				<span class="fadeIn">
+					<h1>Samuel Lundquist (WIP)</h1>
+					<h4>Aspiring Software Developer<h4>
 				</span>
 			</div>
 
-			<div class='content' id='panel1'>
-				<div class='block'>
-					<div id="mediumPic"></div>
-					<div id="textBlock">
+			<div class="content" id="contentPanel">
+				<div class="subject">
+					<div class="sub_image" style="background-image: url('./media/uwu.png');">
+					</div>
+					<div class="sub_text">
 						<h2>Hi I'm Sam, welcome to my site!</h2>
-						<P>
+						<p>
 							I'm a passionate technology orientied individual
 							aspiring to work in web design and or software development.
 							I was born and raised on the oregon coast, and hope to
 							enjoy the pacific northwest for a few years longer.
-							<br/><br/>
-							I am currently a senior at the University of Oregon majoring
-							in computer science. After graduation, I'm looking to jump headfirst
-							into software development. Ideally, I hope to find a team to work
-							with that strives to help eachother to become the best version of
-							themselves and aims to develop innovative solutions that push
-							the boundaries of technology.
+						</p>
+						<p>
+							I just recently completed my B.I.S. in Computer Science at the
+							University of Oregon. Now I'm looking to jump headfirst into
+							software development. I want to find a team that strives to
+							help eachother become the best version of themselves. With that
+							team, I hope to develop innovative solutions and push the
+							boundaries of technology.
 						</p>
 					</div>
 				</div>
 
+				<div class="subject">
+					<div class="sub_image" style="background-image: url('./media/steel.jpg');">
+					</div>
+					<div class="sub_text">
+						<h2>Hobbies and Interests</h2>
+						<p>
+							Video game are my hobby until I get a jobby. My favorite
+							game is League of Legends. I also enjoy lifting at the gym and
+							listenting to lots of music. I like everything that has to do
+							with art and fashion.
+						</p>
+						<p>
+							I am also fascinated with the art and culture of Asia.
+							I took a year of Japanese my senior year of college and
+							am planning on continuing to learn the language enough to be
+							fluent. My only regret is that I did not realize this sooner
+							and take Japanese classes all four years of school.
+						</p>
+					</div>
+				</div>
 			</div>
+
+			<span>
+				<button class="topper" onclick="topScroller()">Back to top</a>
+			</span>
 
 		</section>
 
+		<div class="footer">
+			<div class="ftr_text">Samuel Lundquist</div>
+			<div class="ftr_text">November, 2020</div>
+		</div>
 	</body>
 
 	<script type="text/javascript" src="./src/nav.js"></script>
