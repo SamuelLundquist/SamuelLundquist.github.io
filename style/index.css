@@ -178,7 +178,7 @@ li a:not(.active)
 {
 	background-color: black;
 	width: 100%;
-	visibility: collapse;
+	visibility: hidden;
 }
 .container {
 	float: right;

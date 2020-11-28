@@ -25,25 +25,31 @@ jQuery(window).scroll(function(){
 //Function to load html data without reloading entire page for fast browsing
 $("li a").on("click", function (e) {
 
+	//Prevent standard a action
 	e.preventDefault();
-	console.log("Hey you clicked me!");
-	const href = $(this).attr('href');
-	console.log(href);
+
+	//Update active page in menu and close the menu if in mobile mode
 	$("li a").removeClass("active");
 	$(this).addClass("active");
-	if($(".barFill").is(':visible')) {
+	if($(".barFill").css('visibility') !== 'hidden') {
 		console.log("hiding");
 		$(".container")[0].classList.toggle("change");
 		$(".menu li").removeClass('vis');
 	}
+
+	//Push state
+	const href = $(this).attr('href');
+	console.log(href);
 	window.history.pushState(null, null, href);
+
+	//Update url
 	$.ajax({
 		url: href,
 		success: function (data) {
 			$("section").fadeOut(250, function () {
 				const newPage = $(data).filter("section").html();
-				$("section").html(newPage);
 				jQuery(window).scrollTop(0);
+				$("section").html(newPage);
 				$("section").fadeIn(250);
 			});
 		}
