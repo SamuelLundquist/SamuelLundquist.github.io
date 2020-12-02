@@ -20,4 +20,4 @@ Insert the following code in the `head` section of your pages:
 
 *Optional* - Check your favicon with the [favicon checker](https://realfavicongenerator.net/favicon_checker)
 
-added line to test
+added line to test.
