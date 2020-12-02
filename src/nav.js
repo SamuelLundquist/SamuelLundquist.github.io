@@ -31,8 +31,7 @@ $("li a").on("click", function (e) {
 	//Update active page in menu and close the menu if in mobile mode
 	$("li a").removeClass("active");
 	$(this).addClass("active");
-	if($(".barFill").css('visibility') !== 'hidden') {
-		console.log("hiding");
+	if($(".barFill").css('visibility') !== 'collapse') {
 		$(".container")[0].classList.toggle("change");
 		$(".menu li").removeClass('vis');
 	}
