@@ -49,6 +49,19 @@ button
 	font-family: 'Montserrat', sans-serif;
 }
 
+.fadeIn {
+	opacity: 0;
+	-webkit-transition: opacity 1.5s ease-in;
+	-moz-transition: opacity 1.5s ease-in;
+	-ms-transition: opacity 1.5s ease-in;
+	-o-transition: opacity 1.5s ease-in;
+	transition: opacity 1.5s ease-in;
+}
+
+.fadeIn.load {
+	opacity: 1;
+}
+
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */

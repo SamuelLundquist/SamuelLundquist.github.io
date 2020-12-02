@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".fadeIn").hide(0).delay(250).fadeIn(500);
+	$(".fadeIn").addClass("load");
 });
 
 //Function to show hide content and change background
